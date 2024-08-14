@@ -32,7 +32,7 @@
       
       .title {
         position: absolute;
-        margin-top: 200px;
+        /* margin-top: 200px; */
         top: 30px;
         font-size: 25px;
         color: white;
@@ -40,12 +40,29 @@
         font-family: 'Poppins', sans-serif;
         text-align: center;
         filter: drop-shadow(4px 4px 2px rgb(0, 56, 94)) drop-shadow(-4px -4px 2px rgb(0, 56, 94) );
-        animation: fuzzie 3s ;
+        animation: fuzzie 4s ;
+      }
+
+      .mrq{
+        padding-top: 100px;
+        animation: marq 10s;
+        margin-left: 20px;
+        margin-right: 20px;
       }
       
+      @keyframes marq {
+        0%{
+          opacity: 0;
+        }
+
+        100%{
+          opacity: 1;
+          
+        }
+      }
+
       @keyframes fuzzie {
         0%{
-          transform: translateZ(300px);
           opacity: 0;
         }
 
@@ -53,6 +70,7 @@
           opacity: 1;
         }
       }
+      
       .reloadBtn {
         position: absolute;
         top: 110px;
@@ -1287,7 +1305,8 @@
     <audio autoplay loop>
   <source src="odo.mp3" type="audio/mp3">
 </audio>
-    <h1 class="title">For living moon Fuzzie &hearts; <br> 12-11-2009  </h1>
+  <h1 class="title">For living moon Fuzzie &hearts; <br> 12-11-2009  <marquee class="mrq">Hey! Habiba read carefully okey? listen Your Beauty, a celestial sphere, outshines the moon gentle sphere. Your eyes hold the moon Magic. Your laughter is the moon soft whisper, calming and enchanting. Your spirit, like the moon, is ever-enchanting yet eternally beautiful. In the Garden of soul, you are the fairest under moonlight. Happy Birthday Fuzzie  &hearts; </marquee></h1>
+      
     <button class="reloadBtn" onclick="bloomFlower()">For You</button>
     <div class="night"></div>
     <div class="flowers">
